@@ -26,3 +26,6 @@
     1. Wait for the operation to complete.
     1. If the `Auto close operation` option was not selected, press the stop button to finish the operation.
 1. Task completed.
+
+_Note:_ The Manx plugin uses the field `app.contact.websocket` for forwarding responses to the web console. 
+This value cannot be set to a public IP not present on the server's NIC, such as in Azure. If left at 0.0.0.0:7011 for a remote device, forwarding the port for `app.contact.http` and `app.contact.websocket` and opening at http://localhost:8888 make this process easier to complete.
